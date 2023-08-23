@@ -1,5 +1,8 @@
 name: Publish Docs
 on:
+  release:
+    types:
+      - published
   push:
     tags: ['realm-react-v[0-9]+.[0-9]+.[0-9]+*', 'realm-web-v[0-9]+.[0-9]+.[0-9]+*', 'v[0-9]+.[0-9]+.[0-9]+*']
 jobs:

@@ -3,6 +3,7 @@ on:
   release:
     types:
       - published
+      - edited
   push:
     tags: ['realm-react-v[0-9]+.[0-9]+.[0-9]+*', 'realm-web-v[0-9]+.[0-9]+.[0-9]+*', 'v[0-9]+.[0-9]+.[0-9]+*']
 jobs:
@@ -11,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: foo
-        run: echo "hello World"
+        run: echo ${{ github.ref_name }}

@@ -4,6 +4,8 @@ on:
     tags: ['realm-react-v[0-9]+.[0-9]+.[0-9]+*', 'realm-web-v[0-9]+.[0-9]+.[0-9]+*', 'v[0-9]+.[0-9]+.[0-9]+*']
 jobs:
   publish:
-    name: echo
+    name: Build & Publish Realm Docs
     runs-on: ubuntu-latest
-    run: echo "Hello"
+    steps:
+      - name: foo
+        run: echo "hello World"

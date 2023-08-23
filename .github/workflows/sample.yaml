@@ -6,4 +6,4 @@ jobs:
   publish:
     name: echo
     runs-on: ubuntu-latest
-    steps: echo "Hello"
+    run: echo "Hello"
